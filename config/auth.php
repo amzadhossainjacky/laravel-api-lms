@@ -46,10 +46,15 @@ return [
             'provider' => 'admins',
         ],
 
-
-        'api' => [
-            'driver' => 'token',
+        'apiUser' => [
+            'driver' => 'jwt',
             'provider' => 'users',
+            'hash' => false,
+        ],
+
+        'apiAdmin' => [
+            'driver' => 'jwt',
+            'provider' => 'admins',
             'hash' => false,
         ],
     ],
